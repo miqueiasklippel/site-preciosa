@@ -1,0 +1,18 @@
+SITE ÁGUA MINERAL PRECIOSA
+
+Coloque as imagens nestes caminhos (os nomes precisam ser exatamente estes):
+
+  assets/img/logo.png                               (logo 960 x 960 px, de preferência PNG com fundo transparente)
+  assets/img/produtos/copo-200ml.jpg                (1600 x 900 px)
+  assets/img/produtos/garrafa-500ml-com-gas.jpg
+  assets/img/produtos/garrafa-510ml.jpg
+  assets/img/produtos/garrafa-1250ml-com-gas.jpg
+  assets/img/produtos/garrafa-1500ml.jpg
+  assets/img/produtos/galao-5l.jpg
+
+Enquanto uma imagem não existir, o site mostra automaticamente um visual substituto em azul.
+Para adicionar ou remover produtos do carrossel, edite os blocos <figure class="slide"> no index.html;
+os indicadores (pontinhos) são criados sozinhos.
+
+Páginas: index.html, contato.html, sac.html, trabalhe-conosco.html
+Estilos: assets/css/style.css   Scripts: assets/js/site.js

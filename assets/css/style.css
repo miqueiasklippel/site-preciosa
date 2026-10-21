@@ -886,3 +886,53 @@ p { margin: 0; }
 .local-mapa { min-height: 460px; }
 @media (max-width: 900px) { .local-mapa { min-height: 380px; } }
 @media (max-width: 600px) { .local-mapa { min-height: 320px; } }
+
+/* ---------- Onde comprar ---------- */
+.mapa-lojas { max-width: 1100px; margin-inline: auto; }
+.mapa-lojas .local-mapa { min-height: 600px; background-color: var(--branco); }
+.mapa-nota { margin-top: 14px; font-size: var(--t-sm); color: var(--tinta-suave); text-align: center; }
+.mapa-nota a { font-weight: 700; white-space: nowrap; }
+.mapa-lojas + .telefone-faixa { max-width: 1100px; margin-top: 32px; }
+@media (max-width: 900px) { .mapa-lojas .local-mapa { min-height: 480px; } }
+@media (max-width: 600px) { .mapa-lojas .local-mapa { min-height: 440px; } }
+
+.aviso-lojas {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+  padding: 18px 22px;
+  border-radius: var(--raio);
+  border: 1px solid var(--linha);
+  background: var(--azul-nevoa);
+  color: var(--tinta);
+  text-decoration: none;
+  transition: border-color .2s, background-color .2s;
+}
+.aviso-lojas:hover { border-color: var(--azul); background: var(--azul-claro); }
+.aviso-lojas .icone {
+  width: 46px; height: 46px; flex: none;
+  border-radius: 14px; background: var(--azul); color: var(--branco);
+  display: grid; place-items: center;
+}
+.aviso-lojas .icone svg { width: 24px; height: 24px; }
+.aviso-lojas > span:nth-child(2) { flex: 1; min-width: 0; color: var(--tinta-suave); }
+.aviso-lojas strong { color: var(--tinta); margin-right: 4px; }
+.aviso-lojas > svg { width: 20px; height: 20px; color: var(--azul); flex: none; }
+
+/* Menu com sete itens: recolhe mais cedo */
+@media (max-width: 1080px) {
+  .menu-botao { display: grid; }
+  .navegacao {
+    position: absolute; left: 0; right: 0; top: 100%;
+    background: var(--branco);
+    border-bottom: 1px solid var(--linha);
+    box-shadow: var(--sombra);
+    padding-block: 8px 16px;
+    padding-left: max(16px, env(safe-area-inset-left, 0px));
+    padding-right: max(16px, env(safe-area-inset-right, 0px));
+  }
+  .navegacao ul { flex-direction: column; align-items: stretch; }
+  .navegacao a { padding: 12px 16px; border-radius: 12px; font-size: var(--t-md); }
+  .js .navegacao:not(.aberta) { display: none; }
+}

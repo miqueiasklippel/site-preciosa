@@ -14,5 +14,5 @@ Enquanto uma imagem não existir, o site mostra automaticamente um visual substi
 Para adicionar ou remover produtos do carrossel, edite os blocos <figure class="slide"> no index.html;
 os indicadores (pontinhos) são criados sozinhos.
 
-Páginas: index.html, contato.html, sac.html, trabalhe-conosco.html
+Páginas: index.html, onde-comprar.html, contato.html, sac.html, trabalhe-conosco.html
 Estilos: assets/css/style.css   Scripts: assets/js/site.js

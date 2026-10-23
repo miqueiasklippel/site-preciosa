@@ -11,7 +11,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700&display=swap">
-<link rel="stylesheet" href="assets/css/style.css?v=20261021d">
+<link rel="stylesheet" href="assets/css/style.css?v=20261023a">
 </head>
 <body>
 
@@ -25,7 +25,7 @@
     <button class="menu-botao" type="button" aria-expanded="false" aria-controls="navegacao" aria-label="Abrir menu"><svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
     <nav class="navegacao" id="navegacao" aria-label="Menu principal">
       <ul>
-        <li><a href="index.html" aria-current="page">Início</a></li><li><a href="index.html#produtos">Produtos</a></li><li><a href="index.html#historia">Nossa história</a></li><li><a href="onde-comprar.html">Onde comprar</a></li><li class="nav-destaque"><a href="contato.html">Contato</a></li><li><a href="sac.html">SAC</a></li><li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
+        <li><a href="index.html" aria-current="page">Início</a></li><li><a href="index.html#produtos">Produtos</a></li><li><a href="index.html#historia">Nossa história</a></li><li><a href="onde-comprar.html">Onde comprar</a></li><li><a href="contato.html">Contato</a></li><li><a href="sac.html">SAC</a></li><li><a href="trabalhe-conosco.html">Trabalhe conosco</a></li>
       </ul>
     </nav>
   </div>
@@ -33,10 +33,9 @@
 <main id="conteudo">
 
 <section class="faixa-azul hero">
-  <div class="bolhas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  
   <div class="envoltorio">
     <div>
-      <span class="selo">Sumidouro · Região Serrana do RJ</span>
       <h1>A pureza da serra, <em>da nossa fonte</em> até a sua mesa.</h1>
       <p class="lead">Água mineral natural e gaseificada, captada em quatro fontes próprias cercadas por mata preservada, envasada com rigoroso controle de qualidade.</p>
       <div class="hero-acoes">
@@ -45,7 +44,6 @@
       </div>
     </div>
     <div class="hero-logo" aria-hidden="true">
-      <span class="anel"></span><span class="anel"></span>
       <div class="moldura" data-imagem><img src="assets/img/logo.png" alt="" width="960" height="960"><svg class="gota" viewBox="0 0 64 64" width="48" height="48" aria-hidden="true"><path d="M32 5C32 5 13 28 13 41a19 19 0 0 0 38 0C51 28 32 5 32 5z" fill="#0061a9"/><path d="M24 40a8 8 0 0 0 8 8" fill="none" stroke="#ffffff" stroke-width="3.2" stroke-linecap="round"/></svg></div>
     </div>
   </div>
@@ -55,7 +53,7 @@
 <section class="numeros" aria-label="A Preciosa em números">
   <div class="envoltorio">
     <ul>
-      <li><strong>2008</strong><span>Fundada em 15 de março</span></li>
+      <li><strong><span data-idade="2008-03-15">18</span><small>anos</small></strong><span>Fundada em 15 de março de 2008</span></li>
       <li><strong>4</strong><span>Fontes próprias de água mineral</span></li>
       <li><strong>49<small>ha</small></strong><span>De área, em grande parte com mata preservada</span></li>
       <li><strong>6</strong><span>Produtos em linhas de envase dedicadas</span></li>
@@ -66,7 +64,6 @@
 <section class="secao" id="produtos" aria-labelledby="titulo-produtos">
   <div class="envoltorio">
     <div class="cabeca-secao">
-      <span class="rotulo">Nossos produtos</span>
       <h2 id="titulo-produtos">Uma embalagem para cada momento</h2>
       <p>Do copo de 200 ml ao galão de 5 litros, a mesma água mineral em todas as versões, natural ou com gás.</p>
     </div>
@@ -128,35 +125,23 @@
 <section class="secao secao-nevoa" id="historia" aria-labelledby="titulo-historia">
   <div class="envoltorio">
     <div class="historia">
+      <div class="historia-titulo">
+        <h2 id="titulo-historia">Nascida na serra, cuidada desde a nascente</h2>
+        <p class="historia-destaque">Cuidar da mata é cuidar da água. Por isso o reflorestamento faz parte do nosso trabalho.</p>
+      </div>
       <div class="historia-texto">
-        <div class="cabeca-secao" style="margin-bottom:8px">
-          <span class="rotulo">Nossa história</span>
-          <h2 id="titulo-historia">Nascida na serra, cuidada desde a nascente</h2>
-        </div>
         <p>Fundada em 15 de março de 2008, a Água Mineral Cascata de Campinas nasceu no Distrito de Campinas, em Sumidouro, na Região Serrana do Estado do Rio de Janeiro, com um propósito claro: oferecer à região uma água mineral de qualidade excepcional.</p>
         <p>Para atender cada vez melhor os nossos clientes, investimos continuamente em equipamentos de alta produtividade e na modernização do nosso processo fabril. Hoje mantemos linhas de envase dedicadas, com controle de qualidade em todas as etapas, para o copo de 200 ml, as garrafas de 500 ml com gás, 510 ml natural, 1,25 L com gás e 1,5 L natural, e o galão de 5 L natural.</p>
         <p>Nossa reserva hídrica é formada por quatro fontes, inseridas em uma área de 49 hectares, em sua maior parte coberta por vegetação nativa. Também assumimos o compromisso do reflorestamento, porque proteger a mata é proteger a quantidade e a pureza da água que chega até você.</p>
         <p>Com tecnologia de ponta, logística enxuta e uma equipe comercial especializada, seguimos em constante expansão e atendemos consumidores em todo o estado e nas regiões vizinhas, sempre com o melhor custo-benefício e sem abrir mão da qualidade que nos trouxe até aqui.</p>
       </div>
-      <aside class="ficha" aria-label="Ficha da empresa">
-        <h3>Da fonte para você</h3>
-        <dl>
-          <div><dt>Localização</dt><dd>Distrito de Campinas, Sumidouro, RJ</dd></div>
-          <div><dt>Fundação</dt><dd>15 de março de 2008</dd></div>
-          <div><dt>Fontes</dt><dd>Quatro fontes próprias</dd></div>
-          <div><dt>Área</dt><dd>49 hectares, majoritariamente preservados</dd></div>
-          <div><dt>Linhas</dt><dd>Água mineral natural e gaseificada</dd></div>
-        </dl>
-        <blockquote>Cuidar da mata é cuidar da água. Por isso o reflorestamento faz parte do nosso trabalho.</blockquote>
-      </aside>
     </div>
   </div>
 </section>
 
 <section class="secao" aria-labelledby="titulo-fale">
   <div class="envoltorio">
-    <div class="cabeca-secao centro">
-      <span class="rotulo">Fale com a gente</span>
+    <div class="cabeca-secao">
       <h2 id="titulo-fale">Estamos prontos para te atender</h2>
       <p>Escolha o assunto e encontre o canal mais rápido para falar com a equipe certa.</p>
     </div>
@@ -186,8 +171,7 @@
 
 <section class="secao secao-nevoa" id="localizacao" aria-labelledby="titulo-local">
   <div class="envoltorio">
-    <div class="cabeca-secao centro">
-      <span class="rotulo">Onde estamos</span>
+    <div class="cabeca-secao">
       <h2 id="titulo-local">Venha nos visitar</h2>
     </div>
     <div class="local">
@@ -200,7 +184,7 @@
 </section>
 
 <section class="faixa-azul faixa-redes" aria-labelledby="titulo-redes">
-  <div class="bolhas" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+  
   <div class="envoltorio">
     <div>
       <h2 id="titulo-redes">Acompanhe a Preciosa</h2>
@@ -249,6 +233,6 @@
     </div>
   </div>
 </footer>
-<script src="assets/js/site.js?v=20261021d"></script>
+<script src="assets/js/site.js?v=20261023a"></script>
 </body>
 </html>

@@ -8,6 +8,17 @@
     el.textContent = new Date().getFullYear();
   });
 
+  /* Anos de empresa, calculados a partir da data de fundação */
+  document.querySelectorAll("[data-idade]").forEach(function (el) {
+    var p = el.getAttribute("data-idade").split("-");
+    var fundacao = new Date(+p[0], +p[1] - 1, +p[2]);
+    var hoje = new Date();
+    var anos = hoje.getFullYear() - fundacao.getFullYear();
+    if (hoje.getMonth() < fundacao.getMonth() ||
+        (hoje.getMonth() === fundacao.getMonth() && hoje.getDate() < fundacao.getDate())) anos--;
+    if (anos > 0) el.textContent = anos;
+  });
+
   /* Menu no celular */
   var botaoMenu = document.querySelector(".menu-botao");
   var nav = document.getElementById("navegacao");

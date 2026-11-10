@@ -1,18 +1,18 @@
 SITE ÁGUA MINERAL PRECIOSA
 
-Coloque as imagens nestes caminhos (os nomes precisam ser exatamente estes):
-
-  assets/img/logo.png                               (logo 960 x 960 px, de preferência PNG com fundo transparente)
-  assets/img/produtos/copo-200ml.jpg                (1600 x 900 px)
-  assets/img/produtos/garrafa-500ml-com-gas.jpg
-  assets/img/produtos/garrafa-510ml.jpg
-  assets/img/produtos/garrafa-1250ml-com-gas.jpg
-  assets/img/produtos/garrafa-1500ml.jpg
-  assets/img/produtos/galao-5l.jpg
-
-Enquanto uma imagem não existir, o site mostra automaticamente um visual substituto em azul.
-Para adicionar ou remover produtos do carrossel, edite os blocos <figure class="slide"> no index.html;
-os indicadores (pontinhos) são criados sozinhos.
-
 Páginas: index.html, onde-comprar.html, contato.html, sac.html, trabalhe-conosco.html
-Estilos: assets/css/style.css   Scripts: assets/js/site.js
+Estilos: assets/css/style.css        Comportamento: assets/js/site.js
+Fontes (hospedadas no próprio site, licença OFL): assets/fonts/
+
+Imagens
+  assets/img/logo.png                 logo (960 x 960 px)
+  assets/img/fotos/*.jpg              foto de cada produto, recortada das fichas (838 x 859 px)
+  assets/img/produtos/*.jpg           fichas técnicas originais em imagem (1600 x 900 px),
+                                      abertas pelo link "Abrir a ficha em imagem"
+
+Para trocar a foto de um produto, substitua o arquivo de mesmo nome em assets/img/fotos/.
+O texto e os dados técnicos de cada produto ficam no index.html: os blocos "prod-painel"
+(descrição) e os blocos <dialog class="ficha"> (tabela da ficha técnica).
+
+Ao alterar style.css ou site.js, troque o valor de "?v=..." nas cinco páginas,
+para o navegador não usar a cópia antiga.
